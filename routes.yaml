@@ -1,0 +1,26 @@
+Authentification : 
+    GET /login anonyme 
+    POST /login anonyme 
+    GET /logout all 
+    GET /register anonyme 
+Restaurant :
+    GET /restaurant all 
+    GET /restaurant/new restaurateur 
+    POST /restaurant restaurateur 
+    GET /restaurant/{id} all 
+    DELETE /restaurant/{id} restaurateur, modérateur 
+    GET /restaurant/{id}/edit restaurateur, modérateur 
+    POST /restaurant/{id}/edit restaurateur, modérateur
+Utilisateurs : 
+    GET /utilisateur modérateur
+    GET /utilisateur/new modérateur
+    POST /utilisateur modérateur
+    GET /utilisateur/{id} modérateur
+    DELETE /utilisateur/{id} modérateur 
+    GET /utilisateur/{id}/edit modérateur 
+    POST /utilisateur/{id}/edit modérateur
+Avis:
+    GET /restaurant/{id}/avis all
+    GET /restaurant/{id}/avis/new utilisateur
+    POST /restaurant/{id}/avis utilisateur
+    DELETE /restaurant/{id}/avis modérateur
